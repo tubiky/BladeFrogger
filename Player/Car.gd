@@ -7,6 +7,8 @@ var direction = 1
 func _ready():
 	randomize()
 	var current_car = CAR_LIST[randi() % CAR_LIST.size()]
+	car_speed = rand_range(220, 280)
+	
 	
 	get_node("AnimatedSprite").animation = current_car
 	
